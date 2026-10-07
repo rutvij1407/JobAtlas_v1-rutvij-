@@ -11,9 +11,12 @@ RAW_DIR = DATA_DIR / "raw"
 PROCESSED_DIR = DATA_DIR / "processed"
 UPLOADS_DIR = PROJECT_ROOT / "uploads"
 
-# Ensure dirs exist
+# Ensure dirs exist (skipped on read-only filesystems, e.g. Vercel)
 for d in (RAW_DIR, PROCESSED_DIR, UPLOADS_DIR):
-    d.mkdir(parents=True, exist_ok=True)
+    try:
+        d.mkdir(parents=True, exist_ok=True)
+    except OSError:
+        pass
 
 # Data file names (processed outputs used by dashboards)
 H1B_STATE_AGGREGATE = PROCESSED_DIR / "h1b_by_state.parquet"
