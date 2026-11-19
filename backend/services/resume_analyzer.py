@@ -3,7 +3,7 @@ Resume analysis: parse PDF/DOCX, extract text, suggest improvements (keywords, A
 """
 import re
 from pathlib import Path
-from typing import Dict, List, Any
+from typing import Dict, Any
 
 try:
     import pdfplumber
@@ -77,8 +77,7 @@ def analyze_resume(text: str, job_description: str = "") -> Dict[str, Any]:
     keywords_found = [k for k in all_keywords if k.lower() in text_lower]
     keywords_missing = [k for k in COMMON_SKILL_KEYWORDS + F1_KEYWORDS if k.lower() not in text_lower][:20]
 
-    # ATS-style score: share of common + JD keywords found
-    relevant = [k for k in all_keywords if k.lower() in (text_lower + " " + jd_lower)]
+    # ATS-style score: share of common + F1 keywords found in the resume
     ats_score = min(100, int(50 + 50 * len(keywords_found) / max(1, len(set(COMMON_SKILL_KEYWORDS + F1_KEYWORDS)))))
 
     f1_found = [k for k in F1_KEYWORDS if k.lower() in text_lower]

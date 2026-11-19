@@ -2,7 +2,7 @@
 F1/H1B job market dashboard: daily job trends, top states, H1B metrics.
 """
 import dash_bootstrap_components as dbc
-from dash import dcc, html, Input, Output, callback
+from dash import dcc, html, Input, Output
 import plotly.graph_objects as go
 import plotly.express as px
 from backend.services.h1b_analytics import (

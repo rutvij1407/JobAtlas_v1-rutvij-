@@ -3,20 +3,12 @@ Load processed data for dashboards. Falls back to synthetic data if files missin
 """
 import pandas as pd
 import numpy as np
-from pathlib import Path
-from datetime import datetime, timedelta
 from config.settings import (
-    PROCESSED_DIR,
     H1B_STATE_AGGREGATE,
     JOB_POSTINGS_BY_STATE,
     JOB_POSTINGS_DAILY,
     MISTAKES_AGGREGATE,
-    MISTAKES_BY_TYPE,
     USA_STATES,
-    JOB_TYPES,
-    COMPANY_TYPES,
-    INDUSTRIES,
-    APPLICATION_SOURCES,
     MISTAKE_TYPES,
 )
 

@@ -2,7 +2,7 @@
 Job application mistake analytics: aggregations by type, source, company, time.
 """
 import pandas as pd
-from backend.data_loader import load_mistakes, load_mistakes_by_type
+from backend.data_loader import load_mistakes
 
 
 def get_mistakes_filtered(

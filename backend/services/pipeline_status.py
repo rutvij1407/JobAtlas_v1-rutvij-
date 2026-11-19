@@ -2,11 +2,9 @@
 Data engineering: pipeline status and day-by-day work log for the Data Engineer dashboard.
 """
 import json
-from pathlib import Path
-from datetime import datetime
 from typing import Dict, List, Any
 
-from config.settings import PIPELINE_STATUS_FILE, DATA_ENGINEER_LOG_FILE, DATA_DIR
+from config.settings import PIPELINE_STATUS_FILE, DATA_ENGINEER_LOG_FILE
 
 
 def get_pipeline_status() -> Dict[str, Any]:

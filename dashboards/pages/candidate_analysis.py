@@ -2,8 +2,7 @@
 Candidate analysis dashboard: upload resume, get scores and suggestions.
 """
 import dash_bootstrap_components as dbc
-from dash import dcc, html, Input, Output, State, callback
-from pathlib import Path
+from dash import dcc, html, Input, Output, State
 import base64
 from backend.services.resume_analyzer import extract_resume_text, analyze_resume
 from config.settings import UPLOADS_DIR

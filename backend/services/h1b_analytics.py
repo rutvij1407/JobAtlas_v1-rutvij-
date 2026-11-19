@@ -2,7 +2,6 @@
 H1B data analytics: state-level aggregations, time trends, top employers.
 """
 import pandas as pd
-import numpy as np
 from backend.data_loader import load_h1b_by_state, load_job_postings_daily, load_job_postings_by_state
 from config.settings import STATE_CENTROIDS
 

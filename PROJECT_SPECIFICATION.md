@@ -226,7 +226,6 @@ See **`requirements.txt`** in the project root for pinned versions. Summary:
 jobs-usa-for-international-students/
 ├── README.md
 ├── PROJECT_SPECIFICATION.md    # This document
-├── SUMMARY_FOR_GIT.md          # Short summary for repo / Word
 ├── requirements.txt
 ├── .env.example
 ├── config/
@@ -266,7 +265,7 @@ jobs-usa-for-international-students/
 
 - **Project specification** (this document): dashboards, data sources, tech stack, filters.  
 - **Requirements list** in `requirements.txt` for Python.  
-- **Summary for Git** in `SUMMARY_FOR_GIT.md` that you can paste into a Word doc or repo README.  
+
 
 **Next steps:**
 

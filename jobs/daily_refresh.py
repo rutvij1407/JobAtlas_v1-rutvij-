@@ -4,10 +4,8 @@ Data engineer responsibilities: run daily (cron/scheduler), monitor via Data Eng
 In production, replace synthetic generation with real API/scrape calls.
 """
 import json
-import pandas as pd
-import numpy as np
 from pathlib import Path
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 
 # Add project root to path
 import sys

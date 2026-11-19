@@ -1,8 +1,7 @@
 """
 USA map page: Google Earth iframe (lightweight) + KML from backend. Optional Plotly chart.
 """
-import dash_bootstrap_components as dbc
-from dash import dcc, html, Input, Output, callback
+from dash import dcc, html, Input, Output
 import plotly.express as px
 from backend.services.h1b_analytics import get_state_level_metrics
 from dashboards.components.filters import map_filters_row

@@ -3,7 +3,7 @@ Data Engineer dashboard: pipeline status, day-by-day work chart, daily log table
 Reflects what a data engineer does: ETL, pipelines, monitoring, daily tasks.
 """
 import dash_bootstrap_components as dbc
-from dash import dcc, html, Input, Output, callback
+from dash import dcc, html, Input, Output
 import plotly.graph_objects as go
 import pandas as pd
 from backend.services.pipeline_status import (

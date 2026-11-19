@@ -2,7 +2,7 @@
 Job application mistakes dashboard: LinkedIn redirects, wrong page, etc.
 """
 import dash_bootstrap_components as dbc
-from dash import dcc, html, Input, Output, callback
+from dash import dcc, html, Input, Output
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
